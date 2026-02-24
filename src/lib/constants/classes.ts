@@ -1,0 +1,183 @@
+export const CLASS_TYPES = [
+  {
+    name: "HIIT",
+    slug: "hiit",
+    description:
+      "High-intensity interval training to maximize calorie burn and boost metabolism.",
+    longDescription:
+      "Our HIIT classes are designed to push your limits with alternating periods of intense exercise and short recovery. Expect a mix of cardio, bodyweight movements, and plyometrics that will leave you feeling accomplished and energized. Perfect for burning maximum calories in minimum time.",
+    duration: 45,
+    difficulty: "Advanced" as const,
+    icon: "Flame",
+    color: "text-red-500",
+    bgColor: "bg-red-500/10",
+    trainer: "Sarah Williams",
+    calories: "500-700",
+    equipment: ["Kettlebells", "Battle Ropes", "Box Jumps"],
+    benefits: [
+      "Maximize calorie burn",
+      "Boost metabolism for hours",
+      "Improve cardiovascular endurance",
+      "Build lean muscle",
+    ],
+  },
+  {
+    name: "Strength",
+    slug: "strength",
+    description:
+      "Build lean muscle and increase power with progressive resistance training.",
+    longDescription:
+      "Our strength training classes focus on compound movements and progressive overload to help you build real, functional strength. Whether you're a beginner learning the basics or an experienced lifter pushing new PRs, our coaches will guide you through proper form and programming.",
+    duration: 60,
+    difficulty: "Intermediate" as const,
+    icon: "Dumbbell",
+    color: "text-orange-500",
+    bgColor: "bg-orange-500/10",
+    trainer: "Marcus Chen",
+    calories: "300-500",
+    equipment: ["Barbells", "Dumbbells", "Squat Racks", "Cable Machines"],
+    benefits: [
+      "Build lean muscle mass",
+      "Increase bone density",
+      "Boost resting metabolism",
+      "Improve posture and stability",
+    ],
+  },
+  {
+    name: "CrossFit",
+    slug: "crossfit",
+    description:
+      "Functional movements performed at high intensity for total body conditioning.",
+    longDescription:
+      "CrossFit at Big Vision combines weightlifting, gymnastics, and cardio into constantly varied workouts. Each class features a warm-up, skill/strength work, and a Workout of the Day (WOD). Scale any movement to your level — everyone is welcome, from first-timers to seasoned athletes.",
+    duration: 60,
+    difficulty: "Advanced" as const,
+    icon: "Zap",
+    color: "text-yellow-500",
+    bgColor: "bg-yellow-500/10",
+    trainer: "Sarah Williams",
+    calories: "400-600",
+    equipment: ["Olympic Bars", "Pull-Up Rigs", "Rowing Machines", "Wall Balls"],
+    benefits: [
+      "Total body conditioning",
+      "Constantly varied training",
+      "Scalable for all levels",
+      "Strong community support",
+    ],
+  },
+  {
+    name: "Yoga",
+    slug: "yoga",
+    description:
+      "Improve flexibility, balance, and mental clarity through mindful movement.",
+    longDescription:
+      "Our yoga classes offer a sanctuary from the daily grind. From power vinyasa flows that build strength and heat, to gentle restorative sessions that promote deep relaxation. Focus on breath, alignment, and mindful movement to improve both physical and mental wellbeing.",
+    duration: 60,
+    difficulty: "All Levels" as const,
+    icon: "Heart",
+    color: "text-green-500",
+    bgColor: "bg-green-500/10",
+    trainer: "Aisha Patel",
+    calories: "200-400",
+    equipment: ["Yoga Mat", "Blocks", "Straps"],
+    benefits: [
+      "Improve flexibility",
+      "Reduce stress and anxiety",
+      "Better balance and coordination",
+      "Enhanced mind-body connection",
+    ],
+  },
+  {
+    name: "Boxing",
+    slug: "boxing",
+    description:
+      "Learn technique, build endurance, and relieve stress with boxing fundamentals.",
+    longDescription:
+      "Step into the ring and discover the ultimate full-body workout. Our boxing classes teach proper technique — jabs, crosses, hooks, uppercuts — while delivering incredible cardio conditioning. Hit the bags, work the pads with a partner, and feel the stress melt away with every punch.",
+    duration: 45,
+    difficulty: "Intermediate" as const,
+    icon: "Swords",
+    color: "text-blue-500",
+    bgColor: "bg-blue-500/10",
+    trainer: "David Rodriguez",
+    calories: "400-600",
+    equipment: ["Boxing Gloves", "Heavy Bags", "Speed Bags", "Focus Mitts"],
+    benefits: [
+      "Full body cardio workout",
+      "Learn self-defense skills",
+      "Incredible stress relief",
+      "Improve coordination and reflexes",
+    ],
+  },
+  {
+    name: "Personal Training",
+    slug: "personal-training",
+    description:
+      "One-on-one sessions tailored to your specific goals and fitness level.",
+    longDescription:
+      "Get the undivided attention of a certified personal trainer who will design a program specifically for you. Whether you want to lose weight, build muscle, train for a sport, or recover from injury, your trainer will create a customized plan and keep you accountable every step of the way.",
+    duration: 60,
+    difficulty: "All Levels" as const,
+    icon: "Users",
+    color: "text-purple-500",
+    bgColor: "bg-purple-500/10",
+    trainer: "All Trainers",
+    calories: "300-600",
+    equipment: ["Full Gym Access", "Customized Equipment"],
+    benefits: [
+      "100% personalized program",
+      "Faster results with expert guidance",
+      "Proper form and injury prevention",
+      "Accountability and motivation",
+    ],
+  },
+] as const;
+
+export const WEEKLY_SCHEDULE = [
+  { day: "Monday", classes: [
+    { name: "HIIT", time: "06:00", trainer: "Sarah W.", duration: 45 },
+    { name: "Yoga", time: "08:00", trainer: "Aisha P.", duration: 60 },
+    { name: "Strength", time: "10:00", trainer: "Marcus C.", duration: 60 },
+    { name: "Boxing", time: "12:00", trainer: "David R.", duration: 45 },
+    { name: "CrossFit", time: "17:00", trainer: "Sarah W.", duration: 60 },
+    { name: "HIIT", time: "19:00", trainer: "Sarah W.", duration: 45 },
+  ]},
+  { day: "Tuesday", classes: [
+    { name: "Strength", time: "06:00", trainer: "Marcus C.", duration: 60 },
+    { name: "HIIT", time: "08:00", trainer: "Sarah W.", duration: 45 },
+    { name: "Yoga", time: "10:00", trainer: "Aisha P.", duration: 60 },
+    { name: "Boxing", time: "17:00", trainer: "David R.", duration: 45 },
+    { name: "Strength", time: "19:00", trainer: "Marcus C.", duration: 60 },
+  ]},
+  { day: "Wednesday", classes: [
+    { name: "CrossFit", time: "06:00", trainer: "Sarah W.", duration: 60 },
+    { name: "Yoga", time: "08:00", trainer: "Aisha P.", duration: 60 },
+    { name: "HIIT", time: "12:00", trainer: "Sarah W.", duration: 45 },
+    { name: "Strength", time: "17:00", trainer: "Marcus C.", duration: 60 },
+    { name: "Boxing", time: "19:00", trainer: "David R.", duration: 45 },
+  ]},
+  { day: "Thursday", classes: [
+    { name: "HIIT", time: "06:00", trainer: "Sarah W.", duration: 45 },
+    { name: "Strength", time: "08:00", trainer: "Marcus C.", duration: 60 },
+    { name: "Yoga", time: "10:00", trainer: "Aisha P.", duration: 60 },
+    { name: "CrossFit", time: "17:00", trainer: "Sarah W.", duration: 60 },
+    { name: "Boxing", time: "19:00", trainer: "David R.", duration: 45 },
+  ]},
+  { day: "Friday", classes: [
+    { name: "Strength", time: "06:00", trainer: "Marcus C.", duration: 60 },
+    { name: "Boxing", time: "08:00", trainer: "David R.", duration: 45 },
+    { name: "HIIT", time: "12:00", trainer: "Sarah W.", duration: 45 },
+    { name: "Yoga", time: "17:00", trainer: "Aisha P.", duration: 60 },
+    { name: "CrossFit", time: "19:00", trainer: "Sarah W.", duration: 60 },
+  ]},
+  { day: "Saturday", classes: [
+    { name: "CrossFit", time: "08:00", trainer: "Sarah W.", duration: 60 },
+    { name: "HIIT", time: "10:00", trainer: "Sarah W.", duration: 45 },
+    { name: "Yoga", time: "12:00", trainer: "Aisha P.", duration: 60 },
+    { name: "Boxing", time: "14:00", trainer: "David R.", duration: 45 },
+  ]},
+  { day: "Sunday", classes: [
+    { name: "Yoga", time: "09:00", trainer: "Aisha P.", duration: 60 },
+    { name: "Strength", time: "11:00", trainer: "Marcus C.", duration: 60 },
+  ]},
+] as const;
