@@ -2,6 +2,8 @@ export const TRANSFORMATIONS = [
   {
     id: "1",
     name: "Jake M.",
+    imageBefore: "https://images.unsplash.com/photo-1583500178450-e59a4309e638?w=400&q=80",
+    imageAfter: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&q=80",
     age: 32,
     duration: "8 months",
     goal: "Weight Loss",
@@ -17,6 +19,8 @@ export const TRANSFORMATIONS = [
   {
     id: "2",
     name: "Lisa R.",
+    imageBefore: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&q=80",
+    imageAfter: "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&q=80",
     age: 28,
     duration: "12 months",
     goal: "Muscle Gain",
@@ -32,6 +36,8 @@ export const TRANSFORMATIONS = [
   {
     id: "3",
     name: "Tom W.",
+    imageBefore: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",
+    imageAfter: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=400&q=80",
     age: 45,
     duration: "6 months",
     goal: "General Fitness",
@@ -47,6 +53,8 @@ export const TRANSFORMATIONS = [
   {
     id: "4",
     name: "Rina S.",
+    imageBefore: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&q=80",
+    imageAfter: "https://images.unsplash.com/photo-1518310952931-b1de897abd40?w=400&q=80",
     age: 35,
     duration: "10 months",
     goal: "Post-Pregnancy",
@@ -62,6 +70,8 @@ export const TRANSFORMATIONS = [
   {
     id: "5",
     name: "Chris D.",
+    imageBefore: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=400&q=80",
+    imageAfter: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=400&q=80",
     age: 26,
     duration: "5 months",
     goal: "Athletic Performance",
@@ -77,6 +87,8 @@ export const TRANSFORMATIONS = [
   {
     id: "6",
     name: "Devon P.",
+    imageBefore: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=400&q=80",
+    imageAfter: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80",
     age: 50,
     duration: "14 months",
     goal: "Rehabilitation",

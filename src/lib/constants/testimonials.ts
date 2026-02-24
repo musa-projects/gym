@@ -5,6 +5,7 @@ export const TESTIMONIALS = [
     content:
       "Big Vision completely changed my life. I lost 30kg and gained confidence I never knew I had. The trainers here genuinely care about your progress.",
     rating: 5,
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
   },
   {
     name: "Maria S.",
@@ -12,6 +13,7 @@ export const TESTIMONIALS = [
     content:
       "The community here is unlike anything I've experienced. Everyone supports each other. The HIIT classes are absolutely addictive.",
     rating: 5,
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
   },
   {
     name: "Alex T.",
@@ -19,6 +21,7 @@ export const TESTIMONIALS = [
     content:
       "Worth every penny. The personal training sessions with Marcus pushed me to levels I didn't think were possible. Best investment in myself.",
     rating: 5,
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
   },
   {
     name: "Priya D.",
@@ -26,6 +29,7 @@ export const TESTIMONIALS = [
     content:
       "As a beginner, I was intimidated by gyms. Big Vision made me feel welcome from day one. The yoga classes are my sanctuary.",
     rating: 5,
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&q=80",
   },
 ] as const;
 

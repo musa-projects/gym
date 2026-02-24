@@ -60,14 +60,14 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-background/90 backdrop-blur-lg border-b border-border shadow-lg"
+          ? "bg-background/70 backdrop-blur-xl border-b border-white/5 shadow-2xl shadow-black/20"
           : "bg-transparent"
       )}
     >
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <Dumbbell className="h-8 w-8 text-primary" />
+          <Dumbbell className="h-8 w-8 text-primary drop-shadow-[0_0_8px_rgba(239,68,68,0.5)]" />
           <span className="font-[var(--font-oswald)] text-2xl font-bold uppercase tracking-wider text-foreground">
             Big<span className="text-primary">Vision</span>
           </span>
@@ -80,13 +80,20 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               className={cn(
-                "rounded-lg px-3 py-2 text-sm font-medium transition-colors",
+                "relative rounded-lg px-3 py-2 text-sm font-medium transition-colors hover:bg-white/5",
                 pathname === link.href
                   ? "text-primary"
                   : "text-muted-foreground hover:text-foreground"
               )}
             >
               {link.label}
+              {pathname === link.href && (
+                <motion.div
+                  layoutId="navbar-indicator"
+                  className="absolute bottom-0 left-1/2 h-0.5 w-4/5 -translate-x-1/2 rounded-full bg-gradient-to-r from-primary to-secondary"
+                  transition={{ type: "spring", stiffness: 350, damping: 30 }}
+                />
+              )}
             </Link>
           ))}
         </div>
@@ -109,7 +116,7 @@ export function Navbar() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 8, scale: 0.95 }}
                     transition={{ duration: 0.15 }}
-                    className="absolute right-0 mt-2 w-56 rounded-xl border border-border bg-card p-2 shadow-xl"
+                    className="absolute right-0 mt-2 w-56 rounded-xl border border-border glass p-2 shadow-xl"
                   >
                     <p className="px-3 py-2 text-xs text-muted-foreground truncate">
                       {user.email}
@@ -117,13 +124,13 @@ export function Navbar() {
                     <div className="my-1 border-t border-border" />
                     <Link
                       href="/dashboard"
-                      className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-foreground transition-colors hover:bg-accent"
+                      className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-foreground transition-colors hover:bg-white/5"
                     >
                       <LayoutDashboard className="h-4 w-4" /> Dashboard
                     </Link>
                     <button
                       onClick={handleLogout}
-                      className="flex w-full items-center gap-2 rounded-lg px-3 py-2 text-sm text-destructive transition-colors hover:bg-accent cursor-pointer"
+                      className="flex w-full items-center gap-2 rounded-lg px-3 py-2 text-sm text-destructive transition-colors hover:bg-white/5 cursor-pointer"
                     >
                       <LogOut className="h-4 w-4" /> Log Out
                     </button>
@@ -161,7 +168,7 @@ export function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="overflow-hidden border-b border-border bg-background/95 backdrop-blur-lg lg:hidden"
+            className="overflow-hidden border-b border-white/5 glass lg:hidden"
           >
             <div className="mx-auto max-w-7xl space-y-1 px-4 pb-6 pt-2">
               {NAV_LINKS.map((link) => (
@@ -172,7 +179,7 @@ export function Navbar() {
                     "block rounded-lg px-4 py-3 text-base font-medium transition-colors",
                     pathname === link.href
                       ? "bg-primary/10 text-primary"
-                      : "text-muted-foreground hover:bg-accent hover:text-foreground"
+                      : "text-muted-foreground hover:bg-white/5 hover:text-foreground"
                   )}
                 >
                   {link.label}

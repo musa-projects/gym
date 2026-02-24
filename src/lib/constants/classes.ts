@@ -2,6 +2,7 @@ export const CLASS_TYPES = [
   {
     name: "HIIT",
     slug: "hiit",
+    image: "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=800&q=80",
     description:
       "High-intensity interval training to maximize calorie burn and boost metabolism.",
     longDescription:
@@ -24,6 +25,7 @@ export const CLASS_TYPES = [
   {
     name: "Strength",
     slug: "strength",
+    image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=800&q=80",
     description:
       "Build lean muscle and increase power with progressive resistance training.",
     longDescription:
@@ -46,6 +48,7 @@ export const CLASS_TYPES = [
   {
     name: "CrossFit",
     slug: "crossfit",
+    image: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800&q=80",
     description:
       "Functional movements performed at high intensity for total body conditioning.",
     longDescription:
@@ -68,6 +71,7 @@ export const CLASS_TYPES = [
   {
     name: "Yoga",
     slug: "yoga",
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
     description:
       "Improve flexibility, balance, and mental clarity through mindful movement.",
     longDescription:
@@ -90,6 +94,7 @@ export const CLASS_TYPES = [
   {
     name: "Boxing",
     slug: "boxing",
+    image: "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=800&q=80",
     description:
       "Learn technique, build endurance, and relieve stress with boxing fundamentals.",
     longDescription:
@@ -112,6 +117,7 @@ export const CLASS_TYPES = [
   {
     name: "Personal Training",
     slug: "personal-training",
+    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80",
     description:
       "One-on-one sessions tailored to your specific goals and fitness level.",
     longDescription:
